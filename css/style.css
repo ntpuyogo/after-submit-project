@@ -83,7 +83,9 @@ html, body {
   font-weight: 600;
 }
 .stepBox > span {
-  line-height: 45px;
+  line-height: 50px;
+  height: 50px;
+  display: inline-block;
 }
 .tab-content {
   margin: 0 auto;
@@ -92,20 +94,33 @@ html, body {
   background-color: rgba(230,230,230,1);
   border-radius: 2px;
 }
+.reminder_info {
+  line-height: 30px;
+}
+.reminder_info:before {
+  content: "▉";
+  color: rgba(118,204,30,1);
+  font-size: 8px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
 #stepone {
-  /*background: url(img/step1.jpg);*/
   background-image: url(http://i.imgur.com/imtIUOx.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 15em;
+  min-height: 15em;
 }
 #steptwo {
-  background-color: white;
-  height: 15em;
+  min-height: 15em;
   padding: 2%;
+  padding-right: 0;
 }
-
+#stepthree {
+  min-height: 15em;
+  padding: 2%;
+  padding-right: 0;
+}
 
 
 
