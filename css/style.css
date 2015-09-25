@@ -18,6 +18,9 @@ html, body {
   height: 100%;
   padding: 5%;
 }
+.sheet-container {
+  display: none;
+}
 .info-wrapper, .sheet-container {
   height: 40em;
   background-color: rgba(250,250,250,1);
@@ -45,16 +48,23 @@ html, body {
   font-weight: 600;
   margin-bottom: 0;
 }
+.info-wrapper h3 {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 600;
+}
 .steps-wrapper {
   width: 100%;
   height: 5em;
   position: relative;
   text-align: center;
   margin-top: 4em;
+  margin-bottom: 2em;
 }
 .steps-wrapper > hr {
   width: 30em;
-  color: black;
+  color: rgba(118,204,30,1);
+  background-color: rgba(118,204,30,1);
   height: 2px;
   text-align: center;
   margin: 0 auto;
@@ -71,6 +81,14 @@ html, body {
   cursor: pointer;
   background-color: white;
   z-index: 999;
+}
+#stepOne {
+  border: 2px solid #05AE0E;
+  box-shadow: 1px 1px 3px rgba(30,30,30,0.3);
+}
+.stepBox:nth-child(1) {
+  border: 1px solid #05AE0E;
+  box-shadow: 1px 1px 1px rgba(50,50,50,1);
 }
 .stepBox:after {
   content: "Step"attr(title);

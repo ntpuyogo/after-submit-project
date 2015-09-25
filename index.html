@@ -27,16 +27,13 @@
     <body>
 
 <div itemscope itemtype="http://schema.org/CreativeWork/FormObject" class="container-fluid">
-  <div class="info-wrapper col-md-6 col-md-offset-2 col-sm-12">
+  <div class="info-wrapper col-md-6 col-md-offset-3 col-sm-12">
+    <h3>快要完成了!</h3>
     <div class="steps-wrapper">
       <hr>
-      <div class="stepLine"></div>
-      <div class="stepBox" title="1: 填寫專案" href="#stepone" aria-controls="stepone" role="tab" data-toggle="tab"><p>1</p></div>
-      <div class="stepBox" title="2: 認證信箱" href="#steptwo" aria-controls="steptwo" role="tab" data-toggle="tab"><p>2</p></div>
-      <div class="stepBox" title="3: 設定聯絡" href="#stepthree" aria-controls="stepthree" role="tab" data-toggle="tab"><p>3</p></div>
-    </div>
-        <div class="inner-header left-header">
-      <h3>完成最後的兩個步驟</h3>
+      <div class="stepBox" id="stepOne" title="1: 已完成" href="#stepone" aria-controls="stepone" role="tab" data-toggle="tab"><p>1</p></div>
+      <div class="stepBox" id="stepTwo" title="2: 認證信箱" href="#steptwo" aria-controls="steptwo" role="tab" data-toggle="tab"><p>2</p></div>
+      <div class="stepBox" id="stepThree" title="3: 設定聯絡" href="#stepthree" aria-controls="stepthree" role="tab" data-toggle="tab"><p>3</p></div>
     </div>
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane fade in active" id="stepone"></div>
@@ -51,7 +48,7 @@
       <div role="tabpanel" class="tab-pane fade" id="stepthree">
         <h4>Step.3 設定聯絡</h4>
         <p class="reminder_info">請輸入右側欄位的內容，完成後YOGO將在24小時內上架你的專案</p>
-        <p class="reminder_info">『你的連絡方式』團員將在下單後取得</p>
+        <p class="reminder_info">『你的連絡方式』將在專案達標後通知下單團員</p>
         <p class="reminder_info">『團員需留下__聯絡方式』，團員將在下單頁面中的備註欄填寫</p>
       </div>
     </div>
@@ -203,7 +200,11 @@
           _initFormViewer(
             "[100,,[]\n]\n");</script>
 
-
+<script> //toggle
+  $("#stepThree").click(function(){
+    $(".sheet-container").animate({width: 'toggle'});
+});
+</script>
 
 
 
