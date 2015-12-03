@@ -1,6 +1,8 @@
 /******************************************************************/
 /*Basic setting*/
 /******************************************************************/
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css);
+
 html, body {
     margin: 0;
     padding: 0;
@@ -17,217 +19,118 @@ html, body {
   background-size: cover;
   height: 100%;
   padding: 5%;
+  padding-top: 1%;
 }
-.sheet-container {
-  display: none;
-}
-.info-wrapper, .sheet-container {
-  height: 40em;
+.info-wrapper {
+  min-height: 40em;
   background-color: rgba(250,250,250,1);
-  padding: 0 !important;
+  padding-bottom: 20px !important;
 }
-.inner-header {
-  widows: 100%;
-  height: 5em;
-}
-.form-container {
-  padding-right: 4%;
-  padding-left: 4%;
-}
-.detail-container {
-  padding-right: 2%;
-  padding-left: 2%;
-}
-
 
 /******************************************************************/
 /*info-wrapper*/
 /******************************************************************/
-.left-header {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 0;
-}
 .info-wrapper h3 {
   text-align: center;
   margin-top: 2.5em;
   font-weight: 600;
 }
-.steps-wrapper {
-  width: 100%;
-  height: 5em;
-  position: relative;
-  text-align: center;
-  margin-top: 4em;
-  margin-bottom: 2em;
-}
-.steps-wrapper > hr {
-  width: 30em;
-  color: rgba(118,204,30,1);
-  background-color: rgba(118,204,30,1);
-  height: 2px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: -2em;
-}
-.stepBox {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #05AE0E;
+#brief_img, #brief_list{
   display: inline-block;
-  vertical-align: middle;
-  margin: 0 5em;
-  cursor: pointer;
-  background-color: white;
-  z-index: 999;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  color: rgba(50,50,50,0.8);
+  vertical-align: top;
 }
-#stepOne {
-  border: 2px solid #05AE0E;
-  box-shadow: 1px 1px 3px rgba(30,30,30,0.3);
+#brief_img {
+  width: 30%;
 }
-.stepBox:nth-child(1) {
-  border: 1px solid #05AE0E;
-  box-shadow: 1px 1px 1px rgba(50,50,50,1);
+#brief_list {
+  width: 58%;
 }
-.stepBox:after {
-  content: "Step"attr(title);
-  position: absolute;
-  margin-left: -3.5em;
+#brief_img > img {
+  width: 85%;
+  height: auto;
+  float: right;
+  margin-top: -40px;
+  margin-right: -20px;
 }
-.stepBox > p {
-  line-height: 50px;
-  color: #05AE0E;
-  font-weight: 600;
+#brief_list > h4 {
+  font-size: 16px;
 }
-.stepBox > span {
-  line-height: 50px;
-  height: 50px;
-  display: inline-block;
-}
-.tab-content {
-  margin: 0 auto;
-  padding: 3%;
-  width: 75%;
-  background-color: rgba(230,230,230,1);
-  border-radius: 2px;
-}
-.reminder_info {
-  line-height: 30px;
-}
-.reminder_info:before {
-  content: "▉";
-  color: rgba(118,204,30,1);
-  font-size: 8px;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-#stepone {
-  background-image: url(http://i.imgur.com/F6Rug51.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 15em;
-}
-#steptwo {
-  min-height: 15em;
-  padding: 2%;
-  padding-right: 0;
-}
-#stepthree {
-  min-height: 15em;
-  padding: 2%;
-  padding-right: 0;
-}
-
-
-
-/******************************************************************/
-/*sheet-container*/
-/******************************************************************/
-.right-header {
-  margin-bottom: 2em;
-  text-align: center;
-  padding-top: 2.5em;
-}
-.sheet-container {
-  border-left: 1px solid rgba(50,50,50,0.1);
-}
-.ss-q-other {
-  width: 6em;
-  font-size: 10px;
-  border: none;
-  background: none;
-  border-bottom: 1px solid rgba(50,50,50,1);
-  position: relative;
-  top: -4px;
-}
-.ss-choices {
+#brief_list > ul {
+  padding-left: 0;
   list-style: none;
-  padding-left: 20px;
 }
-.ss-choice-item > label{
-  margin-bottom: -1px;
+#brief_list > ul > li:before {
+  content: "◆";
+  margin-right: 5px;
+  color: rgba(51,128,210,1);
 }
-.ss-q-short, .ss-q-long {
-  max-width: 11em;
+#hr_line {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  position: relative;
+  text-align: center;
 }
-.ss-q-checkbox {
-  border: 5px solid rgba(50,50,50,1) !important;
-  background: none !important;
+#hr_line:before {
+  position: absolute;
+  content: "曾認證學校信箱？";
+  background: rgb(255,255,255);
+  font-size: 16px;
+  margin-left: -66px;
+  top: -10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: rgba(50,50,50,1);
 }
-#ss-submit {
-  background: none;
-  border: 0;
-  box-shadow: 0;
-  background-color: rgba(118,204,30,1);
-  border-color: rgba(255,255,255,1);
-  color: white;
-  padding: 10px 20px;
-  margin-top: 2em;
-  border-radius: 3px;
-  cursor: pointer;
+/*btns*/
+#btn_wrapper {
+  text-align: center;
 }
-.right-stepBox {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #05AE0E;
+#redirect, #redirect:hover, #redirect:focus {
+  color: black;
+}
+.btns {
+  width: 35%;
+  margin: 30px 10px 10px 10px;
   display: inline-block;
-  margin: 0 5em;
+  border-radius: 5px;
+  min-height: 180px;
   cursor: pointer;
-  background-color: white;
+  box-shadow: 1px 1px 3px rgba(50,50,50,0.3);
+  padding: 10px;
 }
-.right-stepBox > p {
-  line-height: 30px;
-  color: #05AE0E;
-  font-weight: 600;
+.btns:hover {
+  box-shadow: 2px 2px 5px rgba(50,50,50,0.3);
+  transition: 0.1s;
+  opacity: 0.8;
 }
-
-
-
-
-
-
-
-
-
-/******************************************************************/
-/*sheet font*/
-/******************************************************************/
-.basic_font_style {
-	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
-	font-size:13px;
-	font-weight: lighter;
+.btns > h4 {
+  font-size: 22px;
 }
-.sheet_title {
-  font-size: 14px;
-  font-weight: 500;
+#hidden_warpper {
+  width: 90%;
+  margin: 20px auto 0px auto;
+  background: rgba(0,0,0,0.05);
+  padding: 0px 10px 0px 10px;
+  font-size: 13px;
+  display: none;
 }
-.sheet_title:before {
-  content: "▉";
-  color: rgba(118,204,30,1);
-  font-size: 8px;
-  margin-right: 3px;
-  vertical-align: middle;
+#hidden_warpper > p {
+  margin: 0;
+  line-height: 36px;
+}
+#hidden_warpper > p > i {
+  font-size: 18px;
+}
+.btns > i {
+  margin-top: 10px;
+}
+.ever {
+  background: #82c09a;
+}
+.never {
+  background: #EF798A;
 }
